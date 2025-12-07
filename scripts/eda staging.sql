@@ -15,7 +15,7 @@ PRINT '================================================================';
 GO
 
 -- =============================================
--- 1. DROP & CREATE sp_eda_per_table (100% WORKING VERSION)
+-- 1. DROP & CREATE sp_eda_per_table 
 -- =============================================
 IF OBJECT_ID('STAGING.sp_eda_per_table', 'P') IS NOT NULL
     DROP PROCEDURE STAGING.sp_eda_per_table;
@@ -157,7 +157,7 @@ PRINT 'sp_eda_per_table created successfully.';
 GO
 
 -- =============================================
--- 2. sp_check_integrity (clean & working)
+-- 2. sp_check_integrity 
 -- =============================================
 IF OBJECT_ID('STAGING.sp_check_integrity', 'P') IS NOT NULL
     DROP PROCEDURE STAGING.sp_check_integrity;
