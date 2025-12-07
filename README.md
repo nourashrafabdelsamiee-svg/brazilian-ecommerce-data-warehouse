@@ -8,7 +8,6 @@
 **Technology Stack**: Python (Pandas, pyodbc) + SQL Server + T-SQL  
 
 
-**Live Demo**: [GitHub Repository](https://github.com/YOUR_USERNAME/brazilian-ecommerce-data-warehouse)
 
 ## Project Overview
 This project builds a complete, clean, and high-performance data warehouse for the Olist Brazilian E-Commerce dataset using **modern data engineering best practices**:
