@@ -18,33 +18,27 @@ This project builds a complete, clean, and high-performance data warehouse for t
 - Ready for Power BI / Tableau / any BI tool
 
 ## Architecture (Simple & Efficient)
-Raw CSV Files
-↓
-STAGING Schema (raw tables)
-↓
-EDA + Data Quality Checks (stored procedures)
-↓
-WAREHOUSE Schema → dim_customer, dim_seller, dim_product, dim_date
-↓
-fact_sales (112,650 rows – single source of truth)
+![Project Architecture](architecture_diagram.png)
 
 **Why one fact table?**  
 Faster queries, simpler joins, better performance ×10 compared to multi-fact designs.
 
 ## Folder Structure
+
+```text
 brazilian-ecommerce-data-warehouse/
 │
 ├── notebooks/
-│   └── eda.ipynb                 # Initial EDA using Python (Pandas + Seaborn)
+│   └── eda.ipynb                      # Initial EDA using Python (Pandas + Seaborn)
 │
 ├── scripts/
-│   ├── create_staging.sql        # Creates STAGING schema + raw tables
-│   ├── load_staging.py           # Loads all 9 CSV files into SQL Server
-│   ├── eda_procedures.sql        # Advanced EDA + integrity checks
-│   └── create_warehouse.sql      # Final star schema + fact_sales load
+│   ├── create_staging.sql             # Creates STAGING schema + raw tables
+│   ├── load_staging.py                # Loads all 9 CSV files into SQL Server
+│   ├── eda_procedures.sql             # Advanced EDA + data quality checks
+│   └── create_warehouse.sql           # Final star schema + fact_sales load
 │
-├── data/                         # Raw CSV files 
-└── README.md                     # This file
+├── data/                              # Raw CSV files (optional - not uploaded)
+└── README.md                          # This file
 
 ## How to Run (Step-by-Step)
 
