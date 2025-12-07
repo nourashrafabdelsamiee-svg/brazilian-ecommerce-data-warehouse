@@ -20,6 +20,10 @@ This project builds a complete, clean, and high-performance data warehouse for t
 ## Architecture (Simple & Efficient)
 ![Project Architecture](architecture_diagram.png)
 
+## Architecture (Simple & Optimized Star Schema)
+
+![Project Architecture](architecture_diagram.png)
+
 **Why one fact table?**  
 Faster queries, simpler joins, better performance ×10 compared to multi-fact designs.
 
@@ -40,6 +44,7 @@ brazilian-ecommerce-data-warehouse/
 ├── data/                              # Raw CSV files (optional - not uploaded)
 └── README.md                          # This file
 
+```
 ## How to Run (Step-by-Step)
 
 1. **Clone the repository**
