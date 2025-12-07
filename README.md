@@ -1,31 +1,18 @@
- HEAD
 # Brazilian E-Commerce Data Warehouse (Olist Dataset)
 
-**End-to-End Data Engineering Project** – From Raw CSV to Production-Ready Star Schema in SQL Server
+**End-to-End Data Engineering Project** – From Raw CSV to Production-Ready Star Schema  
 
-**Dataset**: Olist Brazilian E-Commerce Public Dataset (Kaggle)  
-**Rows in final fact table**: 112,650 sales lines  
-**Technology Stack**: Python (Pandas, pyodbc) + SQL Server + T-SQL  
+**Dataset**          : Olist Brazilian E-Commerce Public Dataset (Kaggle)  
+**Fact table rows**  : 112,650 sales lines  
+**Tech Stack**       : Python (Pandas + pyodbc) • Microsoft SQL Server • T-SQL  
 
-
-
-## Project Overview
-This project builds a complete, clean, and high-performance data warehouse for the Olist Brazilian E-Commerce dataset using **modern data engineering best practices**:
-
-- Raw data → Staging → Transformation → Single powerful fact table (optimized star schema)
-- Full EDA with custom stored procedures
-- Fast loading using Python + pyodbc
-- Ready for Power BI / Tableau / any BI tool
-
-## Architecture (Simple & Efficient)
-![Project Architecture](architecture_diagram.png)
 
 ## Architecture (Simple & Optimized Star Schema)
 
 ![Project Architecture](architecture_diagram.png)
 
 **Why one fact table?**  
-Faster queries, simpler joins, better performance ×10 compared to multi-fact designs.
+Faster queries, simpler joins, ×10 better performance compared to multi-fact designs.
 
 ## Folder Structure
 
@@ -33,17 +20,16 @@ Faster queries, simpler joins, better performance ×10 compared to multi-fact de
 brazilian-ecommerce-data-warehouse/
 │
 ├── notebooks/
-│   └── eda.ipynb                      # Initial EDA using Python (Pandas + Seaborn)
+│   └── eda.ipynb                      # Initial EDA with Python (Pandas + Seaborn)
 │
 ├── scripts/
 │   ├── create_staging.sql             # Creates STAGING schema + raw tables
 │   ├── load_staging.py                # Loads all 9 CSV files into SQL Server
 │   ├── eda_procedures.sql             # Advanced EDA + data quality checks
-│   └── create_warehouse.sql           # Final star schema + fact_sales load
+│   └── create_warehouse.sql           # Builds final star schema + fact_sales
 │
-├── data/                              # Raw CSV files (optional - not uploaded)
+├── data/                              # Raw CSV files (optional – not uploaded)
 └── README.md                          # This file
-
 ```
 ## How to Run (Step-by-Step)
 
