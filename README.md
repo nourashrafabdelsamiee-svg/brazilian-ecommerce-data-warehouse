@@ -85,7 +85,7 @@ EXEC scripts/create_warehouse.sql
 
 What Makes This Project Special
 
-Real-world ETL pipeline (not just Jupyter notebook)
+Real-world ETL pipeline (not just Jupyter notebook) 
 Proper staging → warehouse separation
 High-performance single fact table design (best practice for this dataset)
 Full data quality procedures with T-SQL
