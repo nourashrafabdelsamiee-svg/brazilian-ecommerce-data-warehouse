@@ -1,3 +1,4 @@
+ HEAD
 # Brazilian E-Commerce Data Warehouse (Olist Dataset)
 
 **End-to-End Data Engineering Project** – From Raw CSV to Production-Ready Star Schema in SQL Server
@@ -101,3 +102,6 @@ Build end-to-end pipelines
 
 Made by Nour Ashraf Mohamed – 2025
 LinkedIn: www.linkedin.com/in/nour-ashraf-064686244
+
+# brazilian-ecommerce-data-warehouse
+>>>>>>> cb772034895d5493ea51fa665d0fbdea1811058c
